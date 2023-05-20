@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: 255, 255, 255;
+  --background-start-color: 0, 0, 0;
+  --background-end-color: 0, 0, 0;
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color-main: rgba(254, 254, 255, 1);
+    --font-color-extra: rgba(149, 158, 172, 1);
+    --font-color-yellow: rgba(248, 186, 41, 1);
+    --background-color-back: rgba(91, 92, 113, 1);
+    --background-color-front: rgba(85, 85, 109, 1);
+    --background-color-main-wrapper: rgba(54, 53, 67, 1);
+
+    font-size: 62.5%;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--font-color-main);
+  background-color: var(--background-color-back);
+  font-size: 62.5%;
+  position: relative;
+  z-index: -2;
+  font-family: 'Barlow', sans-serif;
+}
+
+.shape {
+  background-color: var(--background-color-front);
+  position: absolute;
+}
+
+.circle-grid {
+  position: absolute;
+  top: 15rem;
+  left: -1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 3rem);
+  grid-template-rows: repeat(13, 3rem);
+  gap: 1rem;
+  z-index: -1;
+}
+
+.circle-inside-grid {
+  background-color: var(--background-color-front);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  top: -5rem;
+  right: -6rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.square {
+  width: 40%;
+  height: 30rem;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.main-wrapper {
+  max-width: 108rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem max(5%, 2rem);
+  margin-top: 1rem; 
+  background-color: var(--background-color-main-wrapper);
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
