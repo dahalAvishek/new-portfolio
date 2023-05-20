@@ -19,7 +19,7 @@
     --background-color-back: rgba(91, 92, 113, 1);
     --background-color-front: rgba(85, 85, 109, 1);
     --background-color-main-wrapper: rgba(54, 53, 67, 1);
-
+    overflow-x: hidden;
     font-size: 62.5%;
   }
 }
@@ -95,6 +95,7 @@ select {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -130,13 +131,23 @@ body {
 }
 
 .circle {
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.top {
   width: 30rem;
   height: 30rem;
-  border-radius: 50%;
   top: -5rem;
   right: -6rem;
-  z-index: -1;
   overflow: hidden;
+}
+
+.center {
+  width: 20rem;
+  height: 20rem;
+  top: 30rem;
+  left: 30rem;
 }
 
 .square {
@@ -149,12 +160,29 @@ body {
 
 .main-wrapper {
   max-width: 108rem;
-  width: 80%;
+  width: 95%;
   margin: auto;
   padding: 1rem max(5%, 2rem);
   margin-top: 1rem; 
   background-color: var(--background-color-main-wrapper);
-  opacity: 0.8;
+  opacity: 0.6;
   display: flex;
   flex-direction: column;
+}
+
+.yellow-font {
+  color: var(--font-color-yellow)
+}
+
+.main-font {
+  color: var(--font-color-main)
+}
+
+.extra-font {
+  color: var(--font-color-extra)
+}
+
+.breaker {
+  border: 0.2rem solid var(--font-color-yellow);
+  
 }

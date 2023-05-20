@@ -1,0 +1,16 @@
+.homeBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.topSection {
+    height: 40rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5rem;
+}

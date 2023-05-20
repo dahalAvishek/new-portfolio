@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../style/globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +26,8 @@ export default function RootLayout({
             return items; // Returning the array of JSX elements
           })()}
         </div>
-        <div className="shape circle"></div>
+        <div className="shape circle top"></div>
+        <div className="shape circle center"></div>
         <div className="shape square"></div>
         {children}
       </body>
