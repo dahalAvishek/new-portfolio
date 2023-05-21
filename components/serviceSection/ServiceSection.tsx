@@ -6,7 +6,7 @@ import '../../style/globals.css'
 
 const ServiceSection = () => {
   return (
-    <div className='grid h-fit gap-5'>
+    <div className='grid h-fit gap-5 pl-8'>
         <p className='text-xl'>Services</p>
         <p className='text-2xl font-bold'>Lets biuld quality products in programming and design with my services</p>
         <Link href="https://www.youtube.com/" className='text-xl yellow-font'>show more <AiOutlineArrowRight className='inline'/></Link>

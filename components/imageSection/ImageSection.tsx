@@ -12,7 +12,7 @@ const ImageSection = () => {
             src={lado} 
             alt="Profile Image"
             sizes='(max-width: 768px) 10vw, (max-width: 1200px) 50vw, 33vw'
-            className='profilepicture'
+            className={styles.profilePicture}
         />
     </div>
   )
