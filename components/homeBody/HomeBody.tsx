@@ -17,7 +17,7 @@ const HomeBody = () => {
         </div>
         <ImageSection />
       </div>
-       <BodyLinks />
+      <BodyLinks />
       <div className={styles.bottomSection}>
         <MyServices />
         <MyProjects />

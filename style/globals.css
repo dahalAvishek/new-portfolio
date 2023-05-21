@@ -163,14 +163,15 @@ body {
 .main-wrapper {
   max-width: 108rem;
   width: 95%;
+  height: 99vh;
   margin: auto;
   padding: 1rem max(5%, 2rem);
   margin-top: 1rem;
   background: linear-Gradient(
     to bottom,
     var(--background-color-main-wrapper-top) 0,
-    var(--background-color-main-wrapper-top) 46rem,
-    var(--background-color-main-wrapper-bottom) 46rem,
+    var(--background-color-main-wrapper-top) 48%,
+    var(--background-color-main-wrapper-bottom) 48%,
     var(--background-color-main-wrapper-bottom) 100%
   );
   background-color: aqua;
@@ -202,3 +203,4 @@ body {
 .body-link {
   background-color: rgb(35 35 42);
 }
+

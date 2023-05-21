@@ -1,12 +1,12 @@
 .homeBody {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 43% 7% 50%;
 }
 
 .topSection {
-    height: 40rem;
-    padding: 2rem 0;
     position: relative;
+    padding-top: 8rem;
 }
 
 .columns {
@@ -18,6 +18,5 @@
 .bottomSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 1.5rem;
     align-items: center;
 }

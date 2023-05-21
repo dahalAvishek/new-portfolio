@@ -24,7 +24,7 @@ const MyProjects = () => {
   return (
     <div className='flex flex-col gap-8'>
       {Projects.map(project => (
-      <div className='flex items-center gap-6 w-full' key={project.name}>
+      <div className='py-2 px-2 flex items-center gap-6 w-full hover:shadow-outer hover:scale-105' key={project.name}>
         <div className='w-60 h-36 object-cover relative'>
           <Image  
             fill

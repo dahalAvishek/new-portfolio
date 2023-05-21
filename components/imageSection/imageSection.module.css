@@ -2,8 +2,8 @@
     z-index: 5;
     position: absolute;
     top: 0;
-    bottom: 0;
-    width: 60%;
-    left: 20%;
+    bottom: -1rem;
+    width: 50%;
+    left: 27%;
 }
 
