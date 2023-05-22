@@ -155,7 +155,7 @@ body {
 .square {
   width: 40%;
   height: 30rem;
-  bottom: 0;
+  top: 65rem;
   right: 0;
   z-index: -1;
 }
@@ -163,15 +163,14 @@ body {
 .main-wrapper {
   max-width: 108rem;
   width: 95%;
-  height: 99vh;
   margin: auto;
   padding: 1rem max(5%, 2rem);
   margin-top: 1rem;
   background: linear-Gradient(
     to bottom,
     var(--background-color-main-wrapper-top) 0,
-    var(--background-color-main-wrapper-top) 48%,
-    var(--background-color-main-wrapper-bottom) 48%,
+    var(--background-color-main-wrapper-top) 43%,
+    var(--background-color-main-wrapper-bottom) 43%,
     var(--background-color-main-wrapper-bottom) 100%
   );
   background-color: aqua;

@@ -21,7 +21,7 @@ const BodyLinks = () => {
     { name: "googleLogo", url: "https://www.googleIn.com", logo: GoogleLogo },
   ];
   return (
-    <div className="w-full flex justify-around items-center py-6 body-links ">
+    <div className="w-full flex justify-around items-center body-links ">
       {Logos.map((socialSite) => (
         <a
           href={socialSite.url}

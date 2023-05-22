@@ -1,7 +1,9 @@
 .header {
+    
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    height: 2rem;
 }
 
 

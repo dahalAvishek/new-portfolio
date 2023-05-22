@@ -4,7 +4,7 @@ import '../../style/globals.css'
 
 const IntroSection = () => {
   return (
-    <div className='pb-12 pt-10 grid gap-8'>
+    <div className='pb-12 pt-12 grid gap-8'>
         <p className='text-5xl leading-8 extra-font'>I'm</p>
         <h1 className='text-7xl font-bold'>
             Avishek Dahal

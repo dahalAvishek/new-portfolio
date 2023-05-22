@@ -1,18 +1,17 @@
-.homeBody {
-    height: 100%;
+.mainBody {
     display: grid;
-    grid-template-rows: 43% 7% 50%;
+    grid-template-rows: 34rem 7rem 4rem 44rem;
 }
 
 .topSection {
     position: relative;
-    padding-top: 8rem;
 }
 
 .columns {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 5rem;
+    padding-top: 2rem;
 }
 
 .bottomSection {
