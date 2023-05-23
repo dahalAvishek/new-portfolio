@@ -209,3 +209,7 @@ body {
   box-shadow: 0 2px 3px 5px var (--font-color-yellow); 
 }
 
+.input-section {
+  background-color:rgba(0,0,0,0);
+}
+

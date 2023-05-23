@@ -12,6 +12,18 @@ module.exports = {
           port: '',
           pathname: "/wp-content/**"
         },
+        {
+          protocol: 'https',
+          hostname: 'img.freepik.com',
+          port: '',
+          pathname: "/free-photo/**"
+        },
+        {
+          protocol: 'https',
+          hostname: 'img.freepik.com',
+          port: '',
+          pathname: "/premium-photo/**"
+        },
       ],
     },
   };
