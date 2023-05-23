@@ -203,3 +203,9 @@ body {
   background-color: rgb(35 35 42);
 }
 
+.active-tab {
+  transform: scale(1.2);
+  border-bottom: 5rem solid var (--font-color-yellow);
+  box-shadow: 0 2px 3px 5px var (--font-color-yellow); 
+}
+
