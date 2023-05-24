@@ -28,11 +28,11 @@ const MainBody = () => {
   return (
     <div className={styles.mainBody}>
       <div className={styles.topSection}>
+        <ImageSection />
         <div className={styles.columns}>
           <IntroSection />
           <ServiceSection />
         </div>
-        <ImageSection />
       </div>
       <BodyLinks />
       <NavBar nav={nav} setNav={setNav}/> 

@@ -16,6 +16,16 @@ module.exports = {
         'outer' : '0 3px 3px 1px rgba(0, 0, 0, 1);'
       }
     },
+    screens: {
+      'lg': {'max': '950px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '650px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '450px'},
+      // => @media (max-width: 639px) { ... }
+    }
   },
   plugins: [],
 }

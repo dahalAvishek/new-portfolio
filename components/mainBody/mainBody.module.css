@@ -1,17 +1,37 @@
 .mainBody {
-    display: grid;
-    grid-template-rows: 34rem 7rem 4rem 44rem;
+  display: grid;
+  grid-template-rows: 34rem 7rem 4rem 44rem;
 }
 
 .topSection {
-    position: relative;
+  position: relative;
 }
 
 .columns {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 5rem;
-    padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
+@media screen and (max-width: 950px) {
+  .mainBody {
+    grid-template-rows: 40rem 7rem 4rem 50rem;
+  }
+}
 
+@media screen and (max-width: 650px) {
+  .mainBody {
+    grid-template-rows: 45rem 7rem 4rem 55rem;
+  }
+
+  .topSection {
+    display: flex;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
+}

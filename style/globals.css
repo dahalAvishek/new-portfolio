@@ -16,8 +16,8 @@
     --font-color-main: rgba(254, 254, 255, 1);
     --font-color-extra: rgba(149, 158, 172, 1);
     --font-color-yellow: rgba(248, 186, 41, 1);
-    --background-color-back: rgba(91, 92, 113, 1);
-    --background-color-front: rgba(85, 85, 109, 1);
+    --background-color-back: rgb(75, 76, 97);
+    --background-color-front: rgb(62, 62, 87);
     --background-color-main-wrapper-top: rgba(54, 53, 67, 1);
     --background-color-main-wrapper-center: rgb(77 77 91);
     --background-color-main-wrapper-bottom: rgba(40, 40, 52, 1);
@@ -146,16 +146,16 @@ body {
 }
 
 .center {
-  width: 20rem;
-  height: 20rem;
-  top: 30rem;
-  left: 30rem;
+  width: 25rem;
+  height: 25rem;
+  top: 1rem;
+  left: 43.5%;
 }
 
 .square {
   width: 40%;
   height: 30rem;
-  top: 65rem;
+  top: 67rem;
   right: 0;
   z-index: -1;
 }
@@ -169,12 +169,12 @@ body {
   background: linear-Gradient(
     to bottom,
     var(--background-color-main-wrapper-top) 0,
-    var(--background-color-main-wrapper-top) 43%,
-    var(--background-color-main-wrapper-bottom) 43%,
+    var(--background-color-main-wrapper-top) 40rem,
+    var(--background-color-main-wrapper-bottom) 40rem,
     var(--background-color-main-wrapper-bottom) 100%
   );
   background-color: aqua;
-  opacity: 0.6;
+  opacity: 0.8;
   display: flex;
   flex-direction: column;
 }
@@ -206,10 +206,33 @@ body {
 .active-tab {
   transform: scale(1.2);
   border-bottom: 5rem solid var (--font-color-yellow);
-  box-shadow: 0 2px 3px 5px var (--font-color-yellow); 
+  box-shadow: 0 2px 3px 5px var (--font-color-yellow);
 }
 
 .input-section {
-  background-color:rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
+@media screen and (max-width: 950px) {
+  .main-wrapper {
+    background: linear-Gradient(
+      to bottom,
+      var(--background-color-main-wrapper-top) 0,
+      var(--background-color-main-wrapper-top) 44%,
+      var(--background-color-main-wrapper-bottom) 44%,
+      var(--background-color-main-wrapper-bottom) 100%
+    );
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-wrapper {
+    background: linear-Gradient(
+      to bottom,
+      var(--background-color-main-wrapper-top) 0,
+      var(--background-color-main-wrapper-top) 45%,
+      var(--background-color-main-wrapper-bottom) 45%,
+      var(--background-color-main-wrapper-bottom) 100%
+    );
+  }
+}

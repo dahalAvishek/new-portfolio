@@ -21,8 +21,8 @@ const MyServices = () => {
     },
   ];
   return (
-    <div className="grid gap-20 pr-16">
-      <h2 className="text-5xl font-bold">What Can I Do For Your Needs</h2>
+    <div className="grid gap-20 pr-16 md:gap-10 md:pt-8 md:pr-0">
+      <h2 className="text-5xl font-bold md:text-4xl ">What Can I Do For Your Needs</h2>
       <p className="text-xl">
         It is easier to entrust the work to the experts because theu are able to
         provide the best results with reliable quality

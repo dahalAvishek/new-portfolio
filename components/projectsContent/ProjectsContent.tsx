@@ -44,8 +44,8 @@ const ProjectsContent = () => {
   return (
     <div className='flex flex-wrap justify-between items-center'>
       {Projects.map(project => (
-        <a className='h-40 py-2 px-2 flex flex-row flex-wrap items-center hover:shadow-outer hover:scale-105' key={project.name} href={project.url}>
-          <div className='w-40 h-36 object-cover relative'>
+        <a className='h-40 py-2 px-2 flex flex-row flex-wrap items-center hover:shadow-outer hover:scale-105 lg:h-32' key={project.name} href={project.url}>
+          <div className='w-40 h-36 object-cover relative lg:h-32'>
             <Image  
               fill
               src={project.image}
