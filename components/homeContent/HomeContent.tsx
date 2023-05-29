@@ -5,7 +5,7 @@ import styles from "./homeContent.module.css";
 
 const HomeContent = () => {
   return (
-    <div className={styles.bottomSection}>
+    <div className={styles.homeContent}>
         <MyServices />
         <MyProjects />
       </div>

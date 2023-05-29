@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import styles from "./mainBody.module.css";
 import IntroSection from "../introSection/IntroSection";
-import ServiceSection from '../serviceSection/ServiceSection'
+import ServiceSection from "../serviceSection/ServiceSection";
 import ImageSection from "../imageSection/ImageSection";
 import BodyLinks from "../bodyLinks/BodyLinks";
 import HomeContent from "../homeContent/HomeContent";
@@ -11,18 +11,17 @@ import ProjectsContent from "../projectsContent/ProjectsContent";
 import NavBar from "../common/navbar/NavBar";
 import { useState } from "react";
 
-
 const MainBody = () => {
-  const [nav, setNav] = useState<"Home" | "About" | "Projects">("Home")
-  console.log(nav)
-  let BottomSection
+  const [nav, setNav] = useState<"Home" | "About" | "Projects">("Home");
+  console.log(nav);
+  let BottomSection;
 
   if (nav === "Home") {
-    BottomSection = <HomeContent  />
+    BottomSection = <HomeContent />;
   } else if (nav === "About") {
-    BottomSection = <AboutContent  />
-  } else if (nav=== "Projects") {
-    BottomSection = <ProjectsContent  />
+    BottomSection = <AboutContent />;
+  } else if (nav === "Projects") {
+    BottomSection = <ProjectsContent />;
   }
 
   return (
@@ -35,8 +34,8 @@ const MainBody = () => {
         </div>
       </div>
       <BodyLinks />
-      <NavBar nav={nav} setNav={setNav}/> 
-       {BottomSection}
+      <NavBar nav={nav} setNav={setNav} />
+      {BottomSection}
     </div>
   );
 };
